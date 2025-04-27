@@ -90,7 +90,7 @@ document.querySelector('.contact__form').addEventListener('submit', function (ev
     return true;
 });
 
-document.querySelectorAll('.form-group form-group__control').forEach(input => {
+document.querySelectorAll('.form-group .form-group__control').forEach(input => {
     const modifierClass = 'form-group--active';
 
     input.addEventListener('focus', (event) => {
