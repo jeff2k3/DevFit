@@ -1,2 +1,2 @@
 # DevFit
-LandingPage Academia DevFit
+LandingPage Gym DevFit
