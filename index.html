@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AcademiaFit</title>
+    
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#" class="cabecalho__logo">DevFit</a>
+
+        <nav class="nav" id="nav">
+            <button class="nav__toggle mobile-menu" aria-label="Abrir menu" aria-expanded="false">
+                <span class="mobile-menu__icon">
+                    <span class="mobile-menu__line"></span>
+                    <span class="mobile-menu__line"></span>
+                    <span class="mobile-menu__line"></span>
+                </span>
+            </button>
+            <ul class="nav__list" role="menu">
+                <li class="nav__item"><a href="#planos" class="nav__link">Planos</a></li>
+                <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Quem Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+            <h1 id="hero-title" class="hero__title">Transforme seu corpo em nossa academia</h1>
+            <p class="hero__text">Mais de 20 aulas semanais com profissionais certificados</p>
+            <a href="" class="hero__cta">Agendar Aula Experimental</a>
+        </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+        <div class="about__container">
+            <div class="about__content">
+                <span class="about__badge">Desde 2010</span>
+                <h2 id="about-heading" class="about__title">Nossa História de Transformação</h2>
+                
+                <div class="about__timeline">
+                    <div class="timeline-item" data-scroll="left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Fundando a DevFit</h3>
+                            <p>Começamos como um pequeno estúdio com 3 profissionais apaixonados por fitness</p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item" data-scroll="left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Primeira Expansão</h3>
+                            <p>Dobramos nosso espaço e implementamos aulas em grupo revolucionárias</p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item" data-scroll="left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Reconhecimento Nacional</h3>
+                            <p>Eleita a melhor academia inovadora pelo Prêmio Fitness Brasil</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <a href="#planos" class="about__cta">Faça Parte</a>
+            </div>
+    
+            <div class="about__grid">
+                <div class="about__image-wrapper">
+                    <img src="assets/images/equipe.jpg" 
+                        alt="Equipe de instrutores da AcademiaFit" 
+                        class="about__image"
+                        loading="lazy">
+                    <div class="image-caption">Nossa Equipe</div>
+                </div>
+    
+                <div class="about__image-wrapper">
+                    <img src="assets/images/espaco_fisico.jpg" 
+                        alt="Instalações modernas da academia" 
+                        class="about__image"
+                        loading="lazy">
+                    <div class="image-caption">Nossas Instalações</div>
+                </div>
+    
+                <div class="about__image-wrapper">
+                    <img src="assets/images/aulas.jpg" 
+                        alt="Aula em grupo" 
+                        class="about__image"
+                        loading="lazy">
+                    <div class="image-caption">Aulas Coletivas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="planos" id="planos" aria-labelledby="planos-title">
+        <h2 id="planos-title" class="section-title">Nossos Planos</h2>
+        <div class="planos__grid">
+            <article class="plano-card">
+                <h3 class="plano-card__title">Mensal</h3>
+                <div class="plano-card__preco">
+                    <span class="plano-card__valor">R$ 99</span>
+                    <span class="plano-card__periodo">/mês</span>
+                </div>
+                <ul class="plano-card__beneficios">
+                    <li class="plano-card__item">Acesso à academia</li>
+                    <li class="plano-card__item">2 aulas semanais</li>
+                    <li class="plano-card__item">Acompanhamento básico</li>
+                </ul>
+                <button class="plano-card__cta" data-plano="mensal">Escolher plano</button>
+            </article>
+
+            <article class="plano-card plano-card--destaque">
+                <h3 class="plano-card__title">Anual</h3>
+                <div class="plano-card__preco">
+                    <span class="plano-card__valor">R$ 149</span>
+                    <span class="plano-card__periodo">/mês</span>
+                </div>
+                <ul class="plano-card__beneficios">
+                    <li class="plano-card__item">Acesso ilimitado</li>
+                    <li class="plano-card__item">Aulas especiais</li>
+                    <li class="plano-card__item">Nutricionista</li>
+                    <li class="plano-card__item">Personal trainer</li>
+                </ul>
+                <button class="plano-card__cta" data-plano="anual">Escolher plano</button>
+            </article>
+
+            <article class="plano-card">
+                <h3 class="plano-card__title">Trimestral</h3>
+                <div class="plano-card__preco">
+                    <span class="plano-card__valor">R$ 199</span>
+                    <span class="plano-card__periodo">/mês</span>
+                </div>
+                <ul class="plano-card__beneficios">
+                    <li class="plano-card__item">Todos os benefícios</li>
+                    <li class="plano-card__item">Programa personalizado</li>
+                    <li class="plano-card__item">Massagem semanal</li>
+                    <li class="plano-card__item">Estacionamento VIP</li>
+                </ul>
+                <button class="plano-card__cta" data-plano="trimestral">Escolher plano</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <h2 id="contato-title" class="section-title">Contato</h2>
+        <div class="contact__container">
+            <div class="contact__form-wrapper">
+                <h2 class="contact__title">Comece Sua Jornada Fitness</h2>
+                <form class="contact__form" novalidate>
+                    <div class="form-group">
+                        <input type="text" class="form-group__control" id="name" autocomplete="off" spellcheck="false" required>
+                        <label for="name" class="form-group__label">Nome Completo</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="email" class="form-group__control" id="email" autocomplete="off" spellcheck="false" required>
+                        <label for="email" class="form-group__label">E-mail</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="tel" class="form-group__control" id="phone" autocomplete="off" spellcheck="false" required>
+                        <label for="phone" class="form-group__label">Telefone</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <textarea id="message" class="form-group__control" rows="5" autocomplete="off" spellcheck="false" required></textarea>
+                        <label for="message" class="form-group__label">Mensagem (Opcional)</label>
+                    </div>
+    
+                    <button type="submit" class="contact__cta">
+                        Enviar Mensagem
+                        <svg class="cta-icon" viewBox="0 0 24 24">
+                            <path d="M2 21L23 12 2 3v7l15 2-15 2v7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+    
+            <div class="contact__info">
+                <div class="contact__card" data-scroll="right">
+                    <div class="contact__icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>Rua Devfit, 123<br>Centro, Florianópolis - SC</p>
+                </div>
+    
+                <div class="contact__card" data-scroll="right">
+                    <div class="contact__icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
+                    </div>
+                    <h3>Informações</h3>
+                    <p>contato@devfit.com<br>(00) 00000-0000</p>
+                </div>
+    
+                <div class="contact__card" data-scroll="right">
+                    <div class="contact__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                        </svg>                    
+                    </div>
+                    <h3>Horários</h3>
+                    <p>Seg-Sex: 6h - 22h<br>Sáb: 8h - 18h<br>Domingo e Feriados: Fechado</p>
+                </div>
+    
+                <div class="contact__social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.61 4 4 5.61 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8c1.99 0 3.6-1.61 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact__map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658440769!3d-23.565734367638356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1sen!2sbr!4v1633023189345!5m2!1sen!2sbr" 
+                style="border:0;" 
+                allowfullscreen="true" 
+                loading="lazy"
+                aria-label="Mapa da Localização">
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__title">DevFit</h3>
+                <p class="footer__text text-wrap">Transformando vidas através do fitness desde 2010. Nossa missão é proporcionar saúde e bem-estar com excelência.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.19 2.24.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7C18.34 21.21 22 17.06 22 12.06c0-5.53-4.5-10.02-10-10.02z"/></svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.61 4 4 5.61 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8c1.99 0 3.6-1.61 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__section">
+                <h3 class="footer__title">Links Rápidos</h3>
+                <ul class="footer__list">
+                    <li><a href="#planos" class="footer__link">Planos</a></li>
+                    <li><a href="#contato" class="footer__link">Contato</a></li>
+                    <li><a href="#blog" class="footer__link">Trabalhe Conosco</a></li>
+                    <li><a href="#about" class="footer__link">Quem Somos</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__section">
+                <h3 class="footer__title">Contato</h3>
+                <ul class="footer__contact-list">
+                    <li class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        Rua Devfit, n° 123, Centro, Florianópolis - SC
+                    </li>
+                    <li class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                        </svg>
+                        contato@devfit.com.br
+                    </li>
+                    <li class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        (00) 00000-0000
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer__copyright">
+            <p class="copyright-text">&copy; 2025 DevFit. Todos os direitos reservados.</p>
+        </div>
+        <div class="author-credits">
+            <p class="developer-credit">Desenvolvido por <a href="" class="developer" target="_blank">Jeferson Silva</a></p>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=0000000000000" 
+        class="whatsapp-button" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="Enviar mensagem pelo WhatsApp">
+   
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-text">Fale Conosco</span>
+    </a>
+    
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
